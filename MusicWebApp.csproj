@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\Taylor_Swift.jpg" />
+    <Content Remove="wwwroot\images\Taylor_Swift.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\About.css" />
+    <None Include="wwwroot\css\Blog-Template.css" />
+    <None Include="wwwroot\css\Contact_Us.css" />
+    <None Include="wwwroot\css\Home.css" />
+    <None Include="wwwroot\css\nicepage.css" />
+    <None Include="wwwroot\css\Post-Template.css" />
+    <None Include="wwwroot\css\Songs.css" />
+    <None Include="wwwroot\images\1.jpeg" />
+    <None Include="wwwroot\images\2.jpeg" />
+    <None Include="wwwroot\images\3.jpeg" />
+    <None Include="wwwroot\images\4.jpeg" />
+    <None Include="wwwroot\images\54481.png" />
+    <None Include="wwwroot\images\aaaaa_min.jpg" />
+    <None Include="wwwroot\images\Adele1.jpg" />
+    <None Include="wwwroot\images\Ariana1.jpg" />
+    <None Include="wwwroot\images\bmsc-5.png" />
+    <None Include="wwwroot\images\bmsc-6.png" />
+    <None Include="wwwroot\images\bmsc.png" />
+    <None Include="wwwroot\images\Capture2.png" />
+    <None Include="wwwroot\images\DatabaseModel.PNG" />
+    <None Include="wwwroot\images\default-image-21.jpg" />
+    <None Include="wwwroot\images\default_image_25.jpg" />
+    <None Include="wwwroot\images\default-image.jpg" />
+    <None Include="wwwroot\images\dffffffffffffffff-min.jpg" />
+    <None Include="wwwroot\images\drummer-plays-drums_169016-5585.jpg" />
+    <None Include="wwwroot\images\dssdsd-min.png" />
+    <None Include="wwwroot\images\Ed_Sheeran.jpg" />
+    <None Include="wwwroot\images\ggggg-min.jpg" />
+    <None Include="wwwroot\images\IMG_20190608_130848_Bokeh1.jpg" />
+    <None Include="wwwroot\images\man-plays-drums-background-colored-lights_169016-3427.jpg" />
+    <None Include="wwwroot\images\MusicAppChart1.JPG" />
+    <None Include="wwwroot\images\people-raising-hands-concert_249578-737.jpg" />
+    <None Include="wwwroot\images\people-raising-hands-concert_249578-7372.jpg" />
+    <None Include="wwwroot\images\people-raising-hands-concert_249578-7378.jpg" />
+    <None Include="wwwroot\images\post.jpg" />
+    <None Include="wwwroot\images\Rihanna1.jpg" />
+    <None Include="wwwroot\images\sddd-min5.png" />
+    <None Include="wwwroot\images\silhouette-young-lady-crowd-during-concert_181624-27673.jpg" />
+    <None Include="wwwroot\images\Taylor_Swift.jpg" />
+    <None Include="wwwroot\images\wallpaper2you_217919.jpg" />
+    <None Include="wwwroot\images\WhatsAppImage2022-03-13at3.19.47PM.jpeg" />
+    <None Include="wwwroot\js\jquery.js" />
+    <None Include="wwwroot\js\nicepage.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Unirest-API" Version="1.0.7.6" />
+  </ItemGroup>
+
+</Project>

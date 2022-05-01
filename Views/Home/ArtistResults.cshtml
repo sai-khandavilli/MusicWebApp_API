@@ -1,0 +1,235 @@
+﻿@model MusicWebApp.Models.Tracks
+
+
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​Music for everyone, Live Music, ​How it works, Live Music">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Songs</title>
+    @*<link rel="stylesheet" href="~/css/nicepage.css" media="screen">*@
+    <link rel="stylesheet" href="~/css/Songs.css" media="screen">
+
+    @*<script class="u-script" type="text/javascript" src="~/js/jquery.js" defer=""></script>*@
+    @*<script class="u-script" type="text/javascript" src="~/js/nicepage.js" defer=""></script>*@
+    <meta name="generator" content="Nicepage 4.6.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+
+    <script type="application/ld+json">
+        {
+                "name": "BullsMusicApp",
+                "logo": "~/images/bmsc.png"
+        }</script>
+    <meta name="theme-color" content="#292870">
+    <meta property="og:title" content="Songs">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+</head>
+<body class="u-body u-xl-mode" style="color: #ffffff !important; background-color: #ffffff !important;">
+
+    <header class="u-clearfix u-header u-palette-1-base u-header" id="sec-a997">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <a class="u-image u-logo u-image-1" data-image-width="1390" data-image-height="1028">
+                <img src="~/images/bmsc.png" class="u-logo-image u-logo-image-1">
+            </a>
+            <h1 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-default u-text-1">Bulls Music</h1>
+            <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XL">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;" wfd-invisible="true">
+                    <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                        <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container" wfd-invisible="true">
+                    <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-3-base u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-palette-3-base u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;"></a>
+                        </li>@Html.ActionLink("Home","Index","Home")
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-3-base u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-palette-3-base u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;"></a>
+                        </li>@Html.ActionLink("Our Concept","Songs","Home")
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-3-base u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-palette-3-base u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;"></a>
+                        </li>@Html.ActionLink("About Us","About","Home")
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-3-base u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-palette-3-base u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;"></a>
+                        </li>@Html.ActionLink("Contact Us","Contact_Us","Home")
+@*
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-3-base u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-palette-3-base u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;"></a>
+                        </li>@Html.ActionLink("Update User Info","Edit","Account")*@
+                        <li class="u-nav-item" style="margin-top: 300%">
+                            <a class="u-border-2 u-border-active-palette-3-base u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-palette-3-base u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;"></a>
+                        </li>@Html.ActionLink("Logout","LogOut","Account")
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse" wfd-invisible="true">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" style="padding: 10px 0px;"></a>
+                                </li>@Html.ActionLink("Home","Index","Home")
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" style="padding: 10px 0px;"></a>
+                                </li>@Html.ActionLink("Our Concept","Songs","Home")
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" style="padding: 10px 0px;"></a>
+                                </li>@Html.ActionLink("About Us","About","Home")
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" style="padding: 10px 0px;"></a>
+                                </li>@Html.ActionLink("Contact Us","Contact_Us","Home")
+                           @*     <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" style="padding: 10px 0px;"></a>
+                                </li>@Html.ActionLink("Update User Info","Edit","Account")*@
+                                <li class="u-nav-item" style="margin-top: 300%">
+                                    <a class="u-button-style u-nav-link" style="padding: 10px 0px;"></a>
+                                </li>@Html.ActionLink("Logout","LogOut","Account")
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="u-align-center u-clearfix u-image u-section-1" id="sec-75da" data-image-width="1920" data-image-height="1080">
+        <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+            <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                    <div class="u-container-style u-layout-cell u-shape-rectangle u-size-30 u-layout-cell-1">
+                        <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-1">
+                            <img class="u-expanded-width u-image u-image-contain u-image-1" src="~/images/sddd-min5.png" data-image-width="1128" data-image-height="856">
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-layout-cell u-shape-rectangle u-size-30 u-layout-cell-2">
+                        <div class="u-container-layout u-container-layout-2">
+                            <h2 class="u-custom-font u-font-oswald u-text u-text-default u-text-white u-text-1">Our Artists</h2>
+                            <h4 class="u-custom-font u-font-montserrat u-text u-text-white u-text-2">YOUR ARTIST SEARCH RESULTS ARE HERE</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="u-align-center u-clearfix u-palette-1-base u-section-4" id="sec-9297">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div class="u-expanded-width u-table u-table-responsive u-table-1">
+                <table class="u-table-entity u-table-entity-1">
+                    <colgroup>
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                    </colgroup>
+
+
+
+
+
+                    <thead class="u-grey-50 u-table-header u-table-header-1">
+                        <tr style="height: 31px;">
+                            <th class="u-border-1 u-border-grey-50 u-table-cell">Name</th>
+                            <th class="u-border-1 u-border-grey-50 u-table-cell">Song Title</th>
+                            <th class="u-border-1 u-border-grey-50 u-table-cell">Year</th>
+                            <th class="u-border-1 u-border-grey-50 u-table-cell">Duration (ms)</th>
+
+                            <th class="u-border-1 u-border-grey-50 u-table-cell">Popularity</th>
+                        </tr>
+                    </thead>
+                    <tbody class="u-table-body">
+                        @if (@ViewBag.Artist_Name == "ALL")
+                        {
+                            foreach (MusicWebApp.Models.Item item in Model.items)
+                            {
+
+                                <tr style="height: 75px;">
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell"> @item.track.artists[0].name</td>
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell">@item.track.name</td>
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell">@item.track.album.release_date.Substring(0,4)</td>
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell"><br>@item.track.duration_ms</td>
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell">@item.track.popularity</td>
+
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            foreach (MusicWebApp.Models.Item item in Model.items.Where(n => n.track.artists[0].name == @ViewBag.Artist_Name))
+                            {
+
+                                <tr style="height: 75px;">
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell"> @item.track.artists[0].name</td>
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell">@item.track.name</td>
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell">@item.track.album.release_date.Substring(0,4)</td>
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell"><br>@item.track.duration_ms</td>
+                                    <td class="u-border-1 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell">@item.track.popularity</td>
+
+                                </tr>
+                            }
+                        }
+
+
+
+                    </tbody>
+
+
+
+
+
+                </table>
+
+                <a href="@Url.Action("Songs", "Home")" class="u-active-white u-btn u-btn-round u-btn-submit u-button-style u-hover-white u-palette-3-base u-radius-50 u-text-active-palette-1-base u-text-hover-palette-1-base u-text-palette-1-base u-btn-1">Back</a>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="u-align-center u-black u-clearfix u-footer u-footer" id="sec-6424">
+        <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+            <p class="u-text u-text-default u-text-1">
+                <a>@Html.ActionLink("Home","Index","Home")</a>
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1" data-page-id="569025065"></a>
+            </p>
+            <a class="u-image u-logo u-image-1" data-image-width="1390" data-image-height="1028">
+                <img src="~/images/bmsc.png" class="u-logo-image u-logo-image-1">
+            </a>
+            <p class="u-text u-text-default u-text-2">
+                <a>@Html.ActionLink("About Us","About","Home")</a>
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2" data-page-id="273829172"></a>
+            </p>
+            <p class="u-text u-text-default u-text-3">
+                <a>@Html.ActionLink("Contact Us","Contact_Us","Home")</a>
+                <a data-page-id="1067699" class="u-active-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""></a>
+            </p>
+        </div>
+       		<div class="float-right">
+			<p class="btn btn-outline-primary">
+				<a>@Html.ActionLink("Update Account","Edit","Account")</a>
+			</p>
+			<p class="btn btn-outline-danger">
+				<a>@Html.ActionLink("Delete Account","Delete","Account")</a>
+			</p>
+			<p class="btn btn-outline-dark">
+				<a>@Html.ActionLink("Logout","LogOut","Account")</a>
+			</p>
+		</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿@model AccountViewModel
+
+<head>
+    <script src="~/scripts/register.js"></script>
+    <link rel="stylesheet" href="~/css/Home.css" />
+
+</head>
+
+<body class="u-clearfix u-palette-1-base u-section-7" id="sec-562b">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <span class="u-align-left u-icon u-icon-rounded u-palette-3-base u-radius-50 u-spacing-22 u-icon-1" style="left:300px">
+            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4e91"></use></svg>
+            <svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-4e91" style="enable-background:new 0 0 512 512;">
+                <g>
+                    <g>
+                        <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"></path>
+                    </g>
+                </g>
+            </svg>
+        </span>
+        <h2 class="u-custom-font u-font-oswald u-text u-text-default u-text-palette-3-base u-text-1" style="left:300px">Update User Information</h2>
+        <div class="u-expanded-width-xs u-form u-form-1">
+            <form id="registerForm" source="custom" name="form" style="padding: 10px;">
+                <div class="u-form-group u-form-name">
+                    <label for="username" class="u-label">Name</label>
+                    <input type="text" placeholder="Enter your Name" value="@Html.DisplayFor(Model=>Model.UserName)" id="username" name="username" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                </div>
+                <div class="u-form-email u-form-group">
+                    <label for="email" class="u-label">Email</label>
+                    <input type="email" placeholder="Enter a valid email address" value="@Html.DisplayFor(Model=>Model.EmailId)" id="email" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                </div>
+                @*                <div class="u-form-group u-form-group-4">
+                    <label for="password" class="u-label">Password</label>
+                    <input type="password" placeholder="Set a Password" id="password" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-4">
+                    <label for="confirm-password" class="u-label">Confirm Password</label>
+                    <input type="password" placeholder="Re-enter Password" id="confirm-password" name="confirm-password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>*@
+                <div class="container">
+                    <div class="row">
+                        <div class="col u-align-left u-form-group u-form-submit">
+                            <a onclick="submitEditForm()" id="submit" class="u-active-white u-btn u-btn-round u-btn-submit u-button-style u-hover-white u-palette-3-base u-radius-50 u-text-active-palette-1-base u-text-hover-palette-1-base u-text-palette-1-base u-btn-1">Submit</a>
+                            <input type="button" class="u-form-control-hidden">
+                        </div>
+                    </div>
+                    <div id="errorMessage" class="alert alert-danger fade show d-none" role="alert">
+                    </div>
+                    <div id="successMessage" class="alert alert-success fade show d-none" role="alert">
+                    </div>
+                    <div>
+                        <a href="@Url.Action("Index", "Home")"
+                           class="u-active-white u-btn u-btn-round u-btn-submit u-button-style u-hover-white bg-info u-radius-50 u-text-active-palette-1-base u-text-hover-palette-1-base u-text-palette-1-base u-btn-1">
+                            Go to Home
+                        </a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

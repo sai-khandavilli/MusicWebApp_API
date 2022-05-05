@@ -6,10 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="wwwroot\css\Taylor_Swift.jpg" />
-    <Content Remove="wwwroot\images\Taylor_Swift.jpg" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\css\About.css" />
